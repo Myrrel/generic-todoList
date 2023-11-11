@@ -16,6 +16,10 @@
 		2A42EE542AFFC1FE00EDB01B /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EE522AFFC1FE00EDB01B /* TaskItem.swift */; };
 		2A42EE552AFFC1FE00EDB01B /* TaskResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EE532AFFC1FE00EDB01B /* TaskResponse.swift */; };
 		2A42EE572AFFC20A00EDB01B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EE562AFFC20A00EDB01B /* NetworkService.swift */; };
+		2A42EE5D2AFFC33000EDB01B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EE5B2AFFC33000EDB01B /* NetworkError.swift */; };
+		2A42EE5E2AFFC33000EDB01B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EE5C2AFFC33000EDB01B /* DateHelper.swift */; };
+		2A42EE652AFFC39700EDB01B /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EE632AFFC39700EDB01B /* TaskListViewModel.swift */; };
+		2A42EE662AFFC39700EDB01B /* TaskItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EE642AFFC39700EDB01B /* TaskItemViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		2A42EE522AFFC1FE00EDB01B /* TaskItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
 		2A42EE532AFFC1FE00EDB01B /* TaskResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskResponse.swift; sourceTree = "<group>"; };
 		2A42EE562AFFC20A00EDB01B /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2A42EE5B2AFFC33000EDB01B /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2A42EE5C2AFFC33000EDB01B /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		2A42EE632AFFC39700EDB01B /* TaskListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		2A42EE642AFFC39700EDB01B /* TaskItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItemViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +69,14 @@
 		2A42EE3C2AFFC0E700EDB01B /* generic-todoList */ = {
 			isa = PBXGroup;
 			children = (
+				2A42EE622AFFC38600EDB01B /* ViewModels */,
+				2A42EE612AFFC36C00EDB01B /* App */,
+				2A42EE602AFFC35E00EDB01B /* Views */,
+				2A42EE5F2AFFC35100EDB01B /* Store */,
+				2A42EE5A2AFFC32300EDB01B /* Helpers */,
 				2A42EE512AFFC1C800EDB01B /* Services */,
 				2A42EE502AFFC1C300EDB01B /* Models */,
 				2A42EE4B2AFFC19200EDB01B /* Networking */,
-				2A42EE3D2AFFC0E700EDB01B /* generic_todoListApp.swift */,
-				2A42EE3F2AFFC0E700EDB01B /* ContentView.swift */,
 				2A42EE412AFFC0E800EDB01B /* Assets.xcassets */,
 				2A42EE432AFFC0E900EDB01B /* Preview Content */,
 			);
@@ -104,6 +115,47 @@
 				2A42EE562AFFC20A00EDB01B /* NetworkService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2A42EE5A2AFFC32300EDB01B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2A42EE5C2AFFC33000EDB01B /* DateHelper.swift */,
+				2A42EE5B2AFFC33000EDB01B /* NetworkError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2A42EE5F2AFFC35100EDB01B /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		2A42EE602AFFC35E00EDB01B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2A42EE612AFFC36C00EDB01B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2A42EE3D2AFFC0E700EDB01B /* generic_todoListApp.swift */,
+				2A42EE3F2AFFC0E700EDB01B /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2A42EE622AFFC38600EDB01B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2A42EE642AFFC39700EDB01B /* TaskItemViewModel.swift */,
+				2A42EE632AFFC39700EDB01B /* TaskListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +229,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A42EE4E2AFFC1A600EDB01B /* RequestBuilder.swift in Sources */,
+				2A42EE5D2AFFC33000EDB01B /* NetworkError.swift in Sources */,
 				2A42EE542AFFC1FE00EDB01B /* TaskItem.swift in Sources */,
 				2A42EE402AFFC0E700EDB01B /* ContentView.swift in Sources */,
 				2A42EE552AFFC1FE00EDB01B /* TaskResponse.swift in Sources */,
 				2A42EE4F2AFFC1A600EDB01B /* Endpoint.swift in Sources */,
+				2A42EE5E2AFFC33000EDB01B /* DateHelper.swift in Sources */,
+				2A42EE662AFFC39700EDB01B /* TaskItemViewModel.swift in Sources */,
+				2A42EE652AFFC39700EDB01B /* TaskListViewModel.swift in Sources */,
 				2A42EE3E2AFFC0E700EDB01B /* generic_todoListApp.swift in Sources */,
 				2A42EE572AFFC20A00EDB01B /* NetworkService.swift in Sources */,
 			);
