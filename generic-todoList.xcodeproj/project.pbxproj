@@ -20,6 +20,7 @@
 		2A42EE5E2AFFC33000EDB01B /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EE5C2AFFC33000EDB01B /* DateHelper.swift */; };
 		2A42EE652AFFC39700EDB01B /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EE632AFFC39700EDB01B /* TaskListViewModel.swift */; };
 		2A42EE662AFFC39700EDB01B /* TaskItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EE642AFFC39700EDB01B /* TaskItemViewModel.swift */; };
+		2A42EE682AFFD23D00EDB01B /* TaskStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A42EE672AFFD23D00EDB01B /* TaskStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		2A42EE5C2AFFC33000EDB01B /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		2A42EE632AFFC39700EDB01B /* TaskListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		2A42EE642AFFC39700EDB01B /* TaskItemViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskItemViewModel.swift; sourceTree = "<group>"; };
+		2A42EE672AFFD23D00EDB01B /* TaskStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 		2A42EE5F2AFFC35100EDB01B /* Store */ = {
 			isa = PBXGroup;
 			children = (
+				2A42EE672AFFD23D00EDB01B /* TaskStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				2A42EE4E2AFFC1A600EDB01B /* RequestBuilder.swift in Sources */,
 				2A42EE5D2AFFC33000EDB01B /* NetworkError.swift in Sources */,
+				2A42EE682AFFD23D00EDB01B /* TaskStore.swift in Sources */,
 				2A42EE542AFFC1FE00EDB01B /* TaskItem.swift in Sources */,
 				2A42EE402AFFC0E700EDB01B /* ContentView.swift in Sources */,
 				2A42EE552AFFC1FE00EDB01B /* TaskResponse.swift in Sources */,
